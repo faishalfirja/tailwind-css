@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         "Montserrat": "Montserrat"
-      }
+      }, 
+      fontSize:{
+        agakbesar: "120px",
+      },
     },
   },
   plugins: [],
