@@ -9,6 +9,9 @@ module.exports = {
       fontSize:{
         agakbesar: "120px",
       },
+    backgroundImage:{
+      kucing:'url("/public/images/kucing.jpeg")'
+    }
     },
   },
   plugins: [],
