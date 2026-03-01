@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registrasi</title>
+    <style>
+    /* Menggunakan first-line dan first-letter untuk judul */
+    .intro::first-letter { font-size: 3rem; font-weight: bold; color: #2563eb; }
+    .intro::first-line { font-variant: small-caps; letter-spacing: 2px; }
+    
+    /* Utility selection (highlighted-text) */
+    ::selection { background-color: #fde047; color: #000; }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+    <h2 class="intro mb-4 text-gray-700">Silahkan isi formulir pendaftaran di bawah ini untuk bergabung.</h2>
+
+    <form action="#">
+        <div class="mb-4">
+        <label class="block text-gray-700 font-bold after:content-['*'] after:ml-0.5 after:text-red-500">
+            Username
+        </label>
+        <input type="text" required 
+            class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+            focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+            placeholder="Masukkan username anda">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-bold">Email</label>
+            <input type="email" 
+            class="peer mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm 
+            placeholder-transparent focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+            invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            placeholder="email@contoh.com">
+        
+        <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+            Isikan email dengan benar
+            </p>
+        </div>
+
+        <div class="mb-4">
+        <label class="block text-gray-700 font-bold">Password</label>
+        <input type="password" class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm">
+        </div>
+
+        <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2">Upload Foto Profil</label>
+        <input type="file" class="block w-full text-sm text-slate-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-blue-50 file:text-blue-700
+            hover:file:bg-blue-100"/>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300">
+        Daftar Sekarang
+        </button>
+    </form>
+    </div>
+
+</body>
+</html>
