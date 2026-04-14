@@ -16,18 +16,18 @@
     <div class="dark:bg-blue-500 w-20 h-20"></div>
 
     <div class="mt-6 flex justify-center items-center gap-3">
-        <div class="text-sm dark:text-red-500">Light</div>
+        <div class="text-sm">Light</div>
         <button
             type="button"
             id="themeToggle"
-            class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+            class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-500 dark:bg-lime-600 p-1"
             aria-label="Toggle dark mode"
         >
             <div class="-ml-[3px] h-4 w-4 rounded-full bg-white transition-transform dark:translate-x-3"></div>
         </button>
         <span class="text-sm">Dark</span>
     </div>
-<div class="w-20 h-20 bg-red-500 dark:bg-slate-300 dark:w-80 dark:h-96"></div>
+
     <script>
         const toggleButton = document.querySelector("#themeToggle");
         const html = document.documentElement;
@@ -52,5 +52,38 @@
         const saved = localStorage.getItem("theme") || "light";
         applyTheme(saved);
     </script>
-</body>
+
+    <body>
+
+
+    <form action="text-center" class="text-center">
+        <br>
+        <button class="mx-auto mt-20 bg-sky-500 hover:bg-sky-700 hover:text-red-300 text-center">
+    save changes
+    </button>
+    <br>
+        <label for="email" class="">
+            <input
+            required
+            type="email"
+            id="email"
+            class=" w-60 rounded border px-3 py-2 text-sm shadow required:bg-red-400 "
+            placeholder="masukkan email "
+            />
+        </label>
+    <br>
+    <input
+        type="kata sandi"
+        id="kata sandi"
+        class=" w-60 rounded px-3 py-2 text-sm shadow invalid:text-red-500"
+        placeholder="masukkan kata sandi"
+    />
+
+    <br>
+    <a href="selamat datang login.html">
+
+        <button class="bg-sky-500 focus:bg-green-500 ">login</button>
+    </a>
+        </form>
+
 </html>
